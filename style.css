@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background-color: #468eec;
+  font-size: 1.5rem;
+
+  & header {
+    margin: 1rem;
+    color: #fff;
+  }
+  & main {
+    background-color: #fff;
+    width: 550px;
+    border-radius: 5px;
+    & #resultado {
+      background-color: #0f66d6; /* Cor de fundo */
+      border: none; /* Remove a borda */
+      color: white; /* Cor do texto */
+      padding: 15px 32px; /* Espaçamento interno */
+      text-align: center; /* Alinhamento do texto */
+      text-decoration: none; /* Remove sublinhado */
+      display: inline-block; /* Exibição em linha */
+      font-size: 16px; /* Tamanho da fonte */
+      margin: 4px 2px; /* Margem */
+      cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+      border-radius: 12px; /* Bordas arredondadas */
+      transition-duration: 0.4s; /* Duração da transição */
+    }
+    & #resultado:hover {
+      background-color: rgba(15, 102, 214, 0.8); /* Cor de fundo */
+    }
+    & p {
+      text-align: center;
+    }
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+
+      & .img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 200px;
+        border-radius: 5px;
+      }
+
+    }
+  }
+
+  input,
+  label {
+    margin-inline: 10px;
+    margin-top: 4px;
+  }
+}
+
+.block {
+  overflow: hidden;
+}
+
+
